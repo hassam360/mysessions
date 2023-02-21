@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Data Science"
+    },
+    {
+        "id": 2,
+        "name": "Cloud Computing"
+    },
+    {
+        "id": 3,
+        "name": "Project Management"
+    },
+    {
+        "id": 4,
+        "name": "Business Analytics"
+    },
+    {
+        "id": 5,
+        "name": "Digital Marketing"
+    },
+    {
+        "id": 6,
+        "name": "Machine Learning"
+    },
+    {
+        "id": 7,
+        "name": "Full-stack development"
+    },
+    {
+        "id": 8,
+        "name": "Cybersecurity"
+    },
+    {
+        "id": 9,
+        "name": "Blockchain"
+    },
+    {
+        "id": 10,
+        "name": "Internet of Things"
+    }
+]

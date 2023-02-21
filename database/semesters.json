@@ -1,0 +1,31 @@
+[
+    {
+        "name": "CPISM",
+        "skills": [
+            {
+                "name": "Office Automation",
+                "total_session": 12
+            },
+            {
+                "name": "Building Modern Websites",
+                "total_session": 20
+            },
+            {
+                "name": "Bootstrap and Jquery",
+                "total_session": 8
+            },
+            {
+                "name": "UI/UX for Responsive Web Design",
+                "total_session": 12
+            },
+            {
+                "name": "Optimize Web for Search Engines",
+                "total_session": 6
+            },
+            {
+                "name": "eProject-Responsive Website Development",
+                "total_session": 6
+            }
+        ]
+    }
+]

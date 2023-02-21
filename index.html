@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySession</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-card {
+            box-shadow: 1px 2px 22px -1px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 2px 22px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 2px 22px -1px rgba(0, 0, 0, 0.75);
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 76px 36px;
+            background-color: white;
+        }
+
+        .form-card h1 {
+            text-align: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            margin-top: 12px;
+            padding: 12px 36px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .signup {
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-card">
+        <h1>SIGN UP</h1>
+        <form action="" method="post" class="login-form">
+            <input type="text" placeholder="Enter email" class="email">
+            <input type="text" placeholder="Enter password" class="password">
+            <input type="button" value="SIGN UP" class="signup">
+        </form>
+    </div>
+
+    <script>
+
+        const emailEl = document.querySelector(".email");
+        const passwordEl = document.querySelector(".password");
+
+        const users = JSON.parse(localStorage.getItem('user-demo4'))
+        showUser()
+
+
+        document.querySelector(".signup").addEventListener("click", function () {
+
+            const allUsers = [];
+
+            if (users) {
+                users.forEach(user => {
+                    allUsers.push({
+                        email: user.email,
+                        password: user.password
+                    })
+                });
+            }
+
+            allUsers.push({
+                email: emailEl.value,
+                password: passwordEl.value
+            })
+
+            localStorage.setItem('user-demo4', JSON.stringify(allUsers))
+
+            window.location.assign("home.html");
+
+        });
+
+
+        function showUser() {
+            if (users) {
+                console.log(users.length);
+            } else {
+                console.log("empty");
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
